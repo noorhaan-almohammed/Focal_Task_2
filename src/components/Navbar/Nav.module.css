@@ -1,0 +1,13 @@
+.nav {
+    margin: 18px 50px;
+  }
+  @media (max-width: 1440px){
+    .nav{
+      margin: 16px 50px;
+    }
+  }
+  @media (max-width: 850px){
+    .nav{
+      margin: 50px 8px;
+    }
+  }

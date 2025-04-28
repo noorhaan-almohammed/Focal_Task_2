@@ -1,0 +1,89 @@
+.top_banner{
+    background-color: var(--bg-color);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: 58px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    color: var(--border-color);
+    font-size: 20px;
+    font-weight: 500;
+    .img{
+        width: 18px;
+    }
+}
+.content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+}
+.left_png{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+.right_png{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+.top_png{
+    position: absolute;
+    top: 0;
+    left: 28%;
+    opacity: 0.9;
+    width: 72px;
+}
+.buttom_png{
+    position: absolute;
+    bottom: 0;
+    right: 32%;
+    opacity: 0.9;
+    width: 39px;
+    rotate: 180deg;
+}
+@media (max-width: 1440px){
+    .top_banner {
+        font-size: 16px;
+        height: 48px;
+    }
+    .img{
+        width: 14px;
+    }
+    .left_png,.right_png{
+        width:180px;
+    }
+    .buttom_png{
+        width: 32px;
+        right: 24%;
+    }
+    .top_png{
+        width: 50px;
+        left: 24%;
+    }
+}
+@media (max-width: 550px){
+    .top_banner {
+        font-size: 14px;
+        height: 45px;
+    }
+    .img{
+        width: 12px;
+    }
+    .left_png , .right_png{
+        width:50px;
+    }
+    .buttom_png{
+        width: 32px;
+        right: -2%;
+    }
+    .top_png{
+        width: 32px;
+        left: 0%;
+    }
+}

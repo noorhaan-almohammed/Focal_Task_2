@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+:root {
+  --primary-color: #ff8d4d;
+  --secondary-color: #FFAE80;
+  --border-color: #262626;
+  --bg-color: #FFDECC;
+  --btn-color: #FFEFE5;
+  --dark-color: #1A1A1A;
+  --background-color: #FFF5F0;
+  --bg-img: #FFBE99;
+}
+
+#root {
+  padding: 0;
+  text-align: center;
+}

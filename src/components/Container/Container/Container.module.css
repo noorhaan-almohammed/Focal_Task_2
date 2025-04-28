@@ -1,0 +1,20 @@
+.Container{
+    margin: 200px 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:100px;
+}
+@media(max-width:1440px){
+    .Container{
+        margin:150px 80px;
+        gap:80px;
+    }
+}
+@media(max-width: 850px){
+    .Container{
+        margin:80px 16px;
+        gap:50px;
+    }
+}

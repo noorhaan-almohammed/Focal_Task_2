@@ -1,0 +1,66 @@
+.card{
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 80px 50px 50px 50px;
+    box-shadow: 6px 6px 0px 2px #1e1e1e;
+    position: relative;
+    text-align: left;
+}
+.icon{
+    border: 2px solid var(--border-color);
+    padding: 20px;
+    width: 72px;   /* 74 px in gigma but it is not gold*/
+    height: 72px;
+    position: absolute;
+    top: -34px;
+    left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--bg-color);
+}
+.h2{
+    font-size: clamp(24px, 12px + 0.8333vw, 28px);
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 130%;
+    margin-bottom: 20px;
+}
+.content{
+    font-size: clamp(16px, 4px + 0.8333vw, 20px);
+    font-weight: 500;
+    color: #4c4c4c;
+}
+@media(max-width:1440px){
+    .card{
+        border-radius: 10px;
+        padding: 60px 40px 40px 40px;
+        box-shadow: 4px 4px 0px 2px #1e1e1e;
+    }
+    .icon{
+        padding: 20px;
+        width: 56px;   
+        height: 56px;
+        top: -26px;
+        left: 24px;
+    }
+    .h2{
+        margin-bottom: 16px;
+        font-size: clamp(22px, 20px + 0.2778vw, 24px);
+    }
+}
+@media(max-width: 1000px){
+    .card{
+        padding: 15% 5% 5% 5%;
+    }
+}
+@media(max-width: 720px){
+    .card{
+        padding: 50px 40px 30px 30px;
+    }
+    .icon{
+        padding: 16px;
+    }
+}

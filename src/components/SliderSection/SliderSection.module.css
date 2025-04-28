@@ -1,0 +1,21 @@
+.sliderSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.14%;
+    width: 100%;
+}
+@media (max-width:1440px) {
+ .sliderSection{
+    gap: 40px;
+ }
+}
+@media (max-width:850px){
+    .sliderSection{
+        flex-direction: column;
+        position: relative;
+    }
+    .slider{
+    order:1;
+    }
+}

@@ -1,0 +1,11 @@
+.Section{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 4%;
+}
+@media (max-width:850px){
+    .Section{
+        grid-template-columns: 100%;
+        gap: 40px;
+    }
+}

@@ -1,0 +1,9 @@
+:root {
+  font-family: "Outfit", sans-serif;
+  line-height: 150%;
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

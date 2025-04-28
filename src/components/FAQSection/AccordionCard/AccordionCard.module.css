@@ -1,0 +1,121 @@
+.accordion {
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--btn-color);
+  }
+  
+  .accordion__header {
+    padding: 34px 40px;
+    font-weight: 600;
+    font-size: 22px;
+    background: var(--btn-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    text-align: left;
+    color: var(--border-color);
+    line-height: 150%;
+  }
+  .btn{
+    border: 2px solid var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--background-color);
+  }
+  .LineContainer{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Line{
+    height: 2px;
+    margin: 0 110px 0 40px;
+    width: 90%;
+    background-color: var(--border-color);
+  }
+  .accordion__wrapper {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease;
+    background-color: #f9f9f9;
+    color: #333333;
+  }
+  
+  .accordion__content {
+    overflow: hidden;
+    text-align: left;
+  }
+  .open_header{
+    background: #fff;
+    padding-bottom: 23px;
+  }
+  .open {
+    padding: 0 110px 23px 40px;
+    grid-template-rows: 1fr;
+    background: #fff;
+  }
+  
+  .accordion__content p {
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  @media(max-width:1440px){
+    .accordion {
+      border-radius: 10px;
+    }
+    .accordion__header {
+      padding: 24px 30px;
+        font-size: 18px;
+        gap: 24px;
+      }
+    .btn{
+      border-radius: 4px;
+      padding: 6px;
+      width: 32px;
+      height: 32px;
+    }
+    .Line{
+      margin: 0 86px 0 30px;
+    }
+    .open_header{
+      padding-bottom: 19px;
+    }
+    .open {
+      padding: 0 86px 19px 30px;
+    }
+    .accordion__content p {
+      font-size: 16px;
+    }
+  }
+  @media(max-width:850px){
+    .accordion__header {
+      padding: 20px 24px;
+        font-size: 18px;
+      }
+    .Line{
+      margin: 0 24px;
+    }
+    .open_header{
+      padding-bottom: 23px;
+    }
+    .open {
+      padding: 0 24px 23px 24px;
+    }
+    .accordion__content p {
+      font-size: 16px;
+    }
+  }

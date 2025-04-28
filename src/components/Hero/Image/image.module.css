@@ -1,0 +1,11 @@
+.container{
+    width: 48%;
+    img{
+        width: 100%;
+    }
+}
+@media (max-width:850px){
+    .container {
+        width: 100%;
+    }
+}

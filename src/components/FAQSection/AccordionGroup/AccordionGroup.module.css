@@ -1,0 +1,26 @@
+.AccordionGroup {
+    display: flex;
+    gap: 50px; 
+  }
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+  }
+ 
+  @media(max-width:1440px){
+    .AccordionGroup {
+      gap: 40px;
+  }
+  .column{
+    gap: 24px;
+  }
+  }
+  @media(max-width:850px){
+    .AccordionGroup {
+      flex-direction: column;  
+      gap: 20px;
+  }
+ 
+  }

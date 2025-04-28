@@ -1,0 +1,249 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: white;
+  margin-top: 14px;
+  height: 80px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--border-color);
+  font-size: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.logo_container {
+  background-color: #ff8d4d;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 12px 0 0 12px;
+  border-width: 0px 2px 0px 0px;
+  border-style: solid;
+  border-color: var(--border-color);
+  color: var(--border-color);
+}
+.logo_container img:first-child {
+  width: 40px;
+  height: 40px;
+}
+.logo_container img:last-child {
+  width: 136px;
+  height: 16px;
+}
+.button_container {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.active {
+  background-color: var(--btn-color) !important;
+  color: white;
+}
+
+.contact {
+  background-color: var(--secondary-color) !important;
+  color: white;
+}
+
+.btn {
+  border-color: var(--border-color);
+  border-width: 0px 0px 0px 2px;
+  padding: 20px 34px;
+  background-color: white;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu_icon {
+  display: none;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  margin: 16px 32px;
+}
+
+.mobile_menu_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile_menu {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu_header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.close_icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.mobile_list_item {
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.mobile_list_item:hover {
+  background-color: #f5f5f5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile_list_item {
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.mobile_list_item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.mobile_list_item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.mobile_list_item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.mobile_list_item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.mobile_list_item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.mobile_list_item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+@media (max-width: 1440px) {
+  .Header {
+    height: 66px;
+    font-size: 16px;
+  }
+
+  .button_container {
+    width: 75%;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 16px 30px;
+  }
+
+  .logo_container {
+    width: 16%;
+    padding: 16px 20px;
+  }
+
+  .logo_container img:first-child {
+    width: 34px;
+    height: 34px;
+  }
+  .logo_container img:last-child {
+    width: 116px;
+    height: 13.44px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .logo_container {
+    width: 24%;
+    padding: 8px 16px;
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 850px) {
+  .Header {
+    height: 62px;
+    font-size: 16px;
+    overflow: visible;
+  }
+
+  .button_container {
+    width: 24%;
+    align-items: center;
+    justify-content: center;
+    background: var(--btn-color);
+    border-width: 0 0 0 2px;
+    border-style: solid;
+    border-color: var(--border-color);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+  }
+
+  .logo_container {
+    width: 42%; /* width: 49.5%; in figma 177/357% */
+    padding: 16px 20px;
+    gap: 4px;
+  }
+
+  .logo_container img:first-child {
+    width: 30px;
+    height: 30px;
+  }
+  .logo_container img:last-child {
+    width: 102px;
+    height: 11.66px;
+  }
+}
+@media (max-width: 440px) {
+  .logo_container {
+    width: 54%; /* width: 49.5%; in figma 177/357% */
+  }
+}
