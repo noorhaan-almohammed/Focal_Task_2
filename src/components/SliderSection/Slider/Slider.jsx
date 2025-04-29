@@ -9,11 +9,10 @@ export default function Slider({ cards }) {
   const [cardsPerView, setCardsPerView] = useState(3); 
 
   const updateCardsPerView = () => {
-    if (window.innerWidth <= 850) {
-      setCardsPerView(1);
-    } else {
-      setCardsPerView(3);
-    }
+   (window.innerWidth <= 850) ?
+                  setCardsPerView(1)
+                :
+                  setCardsPerView(3)
   };
 
   useEffect(() => {

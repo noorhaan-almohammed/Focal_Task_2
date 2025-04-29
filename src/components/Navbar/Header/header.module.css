@@ -209,7 +209,7 @@
   }
 
   .button_container {
-    width: 24%;
+    width: 88px;
     align-items: center;
     justify-content: center;
     background: var(--btn-color);
@@ -228,7 +228,7 @@
   }
 
   .logo_container {
-    width: 42%; /* width: 49.5%; in figma 177/357% */
+    width: 180px; /* width: 49.5%; in figma 177/357% */
     padding: 16px 20px;
     gap: 4px;
   }
